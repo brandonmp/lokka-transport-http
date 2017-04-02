@@ -6,4 +6,4 @@
 .idea
 npm-debug.log
 node_modules
-dist
+#dist # commenting out so i can load from github
