@@ -5,6 +5,8 @@ Lokka's great for `node` projects, but I found I was clumsily wrapping most of m
 
 The underlying network layer is pretty reliable, but the retry functionality I've added hasn't been extensively tested in production. If you use it & find issues, please post in this repo.  Or better yet: write a test that shows the problem.  Or, best of all: fix them & help bring a more fully-featured gql client to `node` <3.
 
+**Also, please note this hasn't been tested _at all_ with any Lokka features beyond query/mutation (e.g., caching)**
+
 ## Retries
 
 This layer supports retries courtesy of [async-retry](https://github.com/zeit/async-retry). The default config will retry 3 times & throw afterwards if it isn't successful. 
